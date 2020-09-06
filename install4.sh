@@ -11,7 +11,6 @@ fdisk /dev/mmcblk0
 d
 2
 d
-1
 n
 1
 echo -ne '\n'
