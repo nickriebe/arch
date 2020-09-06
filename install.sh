@@ -11,3 +11,5 @@ fdisk /dev/mmcblk0
 
 # delete shit
 d
+
+# what the shit
