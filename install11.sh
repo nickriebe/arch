@@ -40,7 +40,7 @@ echo -e "127.0.1.1 \tworkbench" >> /etc/hosts |
 # set up bootloader
 mkdir /boot/efi
 mount /dev/mmcblk0p1 /boot/efi
-pacman -S grub -y efibootmgr
+pacman -S grub --noconfirm efibootmgr
 grub-install --target=x86_64-efi --bootloader-id=ARCH --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg |
 
@@ -49,4 +49,4 @@ mkdir /boot/efi/EFI/boot
 cp /boot/efi/EFI/ARCH/grubx64.efi /boot/efi/EFI/boot/bootx64.efi |
 
 # ready to set up environment
-pacman -S -noconfirm xorg
+pacman -S --noconfirm xorg
