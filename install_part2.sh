@@ -52,5 +52,17 @@ cp /boot/efi/EFI/ARCH/grubx64.efi /boot/efi/EFI/boot/bootx64.efi |
 pacman -S --noconfirm xorg |
 
 # now need to pick a desktop environment
+# for gnome
+#pacman -S gnome
+
+# for xfce
+#pacman -S xfce4 xfce4-goodies lxdm
 
 # then install login manager and network manager. done.
+# for gnome
+# systemctl enable gdm
+# systemctl enable NetworkManager
+
+# for xfce
+# systemctl enable lxdm
+# systemctl enable NetworkManager
