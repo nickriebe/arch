@@ -49,4 +49,6 @@ mkdir /boot/efi/EFI/boot
 cp /boot/efi/EFI/ARCH/grubx64.efi /boot/efi/EFI/boot/bootx64.efi |
 
 # ready to set up environment
-pacman -S --noconfirm xorg
+pacman -S --noconfirm xorg |
+
+# now need to install login manager and network manager, then desktop environment. done.
