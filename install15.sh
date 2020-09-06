@@ -15,3 +15,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 mkdir /boot/efi/EFI/boot
 cp /boot/efi/EFI/ARCH/grubx64.efi /boot/efi/EFI/boot/bootx64.efi
 pacman -S --noconfirm xorg
+pacman -S gnome
+systemctl enable gdm
+systemctl enable NetworkManager
+pacman -S xfce4 xfce4-goodies
