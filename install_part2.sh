@@ -1,3 +1,7 @@
+# in case you have shit already mounted
+umount /dev/mmcblk0* |
+
+# Format drives
 mkfs.fat -F32 /dev/mmcblk0p1
 mkfs.ext4 /dev/mmcblk0p2 |
 
