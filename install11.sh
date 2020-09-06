@@ -33,9 +33,9 @@ timedatectl set-timezone America/Chicago |
 echo workbench > /etc/hostname |
 
 # hosts file
-echo '127.0.0.1 \t localhost' > /etc/hosts
-echo '::1 \t localhost' > /etc/hosts
-echo '127.0.1.1 \t workbench' > /etc/hosts |
+echo -e '127.0.0.1 \t localhost' > /etc/hosts
+echo -e '::1 \t localhost' > /etc/hosts
+echo -e '127.0.1.1 \t workbench' > /etc/hosts |
 
 # set up bootloader
 mkdir /boot/efi
