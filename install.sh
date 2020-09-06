@@ -8,4 +8,6 @@
 
 # Launch into Fdisk
 fdisk /dev/mmcblk0
+
+# delete shit
 d
