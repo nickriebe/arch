@@ -8,3 +8,4 @@
 
 # Launch into Fdisk
 fdisk /dev/mmcblk0
+d
